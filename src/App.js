@@ -94,10 +94,10 @@ class App extends Component {
 
     return (
       <main className="flex justify-center bg-orange-lightest items-center flex-col">
-        <Box name="editor" isMaximized={this.state.editor.isMaximized} isHidden={this.state.editor.isHidden} onToggle={this.handleToggle}>
+        <Box className="h-screen" name="editor" isMaximized={this.state.editor.isMaximized} isHidden={this.state.editor.isHidden} onToggle={this.handleToggle}>
           <textarea className="w-full p-2 min-h-48 bg-transparent" id="editor" onChange={this.handleChange} value={this.state.inputText}></textarea>
         </Box>
-        <Box name="preview" isMaximized={this.state.preview.isMaximized} isHidden={this.state.preview.isHidden} onToggle={this.handleToggle}>
+        <Box className="min-h-screen" name="preview" isMaximized={this.state.preview.isMaximized} isHidden={this.state.preview.isHidden} onToggle={this.handleToggle}>
           <div className="p-6 w-4/5" dangerouslySetInnerHTML={renderedText} id="preview"></div>
         </Box>
       </main>

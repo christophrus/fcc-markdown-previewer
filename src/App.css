@@ -1,7 +1,3 @@
 .maximized > textarea {
-  height: 95%;
-}
-
-pre {
-  @apply bg-orange-lightest;
+  min-height: 95%;
 }
