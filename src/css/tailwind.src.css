@@ -1,0 +1,7 @@
+@tailwind preflight;
+@tailwind components;
+@tailwind utilities;
+
+pre {
+    @apply bg-orange-light shadow m-2;
+}
